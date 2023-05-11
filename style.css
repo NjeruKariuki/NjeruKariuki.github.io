@@ -9,6 +9,7 @@
     --primaryColor: #555;
     --secondaryColor: rgb(47, 50, 212);
     --whiteColor: #fff;
+    --accentColor: #666;
     --ff: 'Poppins', sans-serif;
 
 
@@ -72,42 +73,18 @@ body {
   .navbar a {
     display: block;
     padding: 10px;
-    color: #333;
+    color: var(--whiteColor);
     text-decoration: none;
     font-weight: bold;
   }
 
   .navbar a:hover {
-    color: #666;
+    color: var(--accentColor);
   }
 
   .container {
     top: 200px;
   }
-/*
-nav {
-
-}
-
-
-
-ul {
-    display: flex;
-    gap: var(--spacer);
-}
-
-li {
-    list-style: none;
-}
-
-li > a{
-    color: var(--whiteColor);
-    text-decoration: none;
-}
-
-li > a:hover {
-    color: var(--secondaryColor);
-} */
 
 section {
     position: relative;
@@ -119,3 +96,41 @@ section {
 
 /* hero */
 
+.hero {
+    display: flex;
+    gap: var(--spacerMd);
+    padding: var(--spacer);
+}
+
+.heroText {
+    height: 400px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.welcomeText {
+    font-size: 48px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+.heroText > h2 {
+    display: flex;
+    align-items: center;
+    gap: var(--spacer);
+    font-size: 40px;
+}
+
+.heroText > h2 > span {
+    font-size: 56px;
+    color: var(--secondaryColor);
+}
+
+.hero > img {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+}
