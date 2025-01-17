@@ -1,8 +1,8 @@
 /* Setup */
 :root {
-    --colorprimary: #000000;
+    --colorprimary: #228288;
     --colorsecondary: #ffffff;
-    --coloraccent: #ed242b;
+    --coloraccent: #ffda67;
     --colorlinks: #b6b4b5;
     --ff: "Inter", sans-serif;
     --h1: bold 54px/70px var(--ff);
@@ -72,8 +72,17 @@
     width: 90vw;
     max-width: 1080px;
   }
+
+  .logo-div {
+	  display: flex;
+	  gap: 16px;
+	  color: white;
+	  align-items: center;
+  }
+
   .logo {
-    width: 100px;
+    width: 64px;
+    height:64px;
   }
   a {
     text-decoration: none;

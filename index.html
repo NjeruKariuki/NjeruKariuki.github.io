@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dunder Mifflin Scranton</title>
+    <title>Nagelle Drugmart & Agrovet</title>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -18,6 +18,11 @@
 
       gtag("config", "G-Y5FVPTSY07");
     </script>
+    
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
     <link rel="shortcut icon" href="dms/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,11 +35,14 @@
   <body>
     <header>
       <div class="header">
-        <a href="./"><img src="dms/img/Logo.svg" class="logo" /></a>
+	      <div class="logo-div">
+		      <a href="./"><img src="dms/img/nagelle-logo.png" class="logo" /></a>
+		      <strong><h3>Nagelle</h3></strong>
+	      </div>
 
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#products" class="nav-link">Products</a>
+            <a href="#ourstory" class="nav-link">Our Story</a>
           </li>
           <li class="nav-item">
             <a href="#mission" class="nav-link">Mission</a>
@@ -61,41 +69,51 @@
     </header>
     <div class="section column">
       <div class="c1">
-        <h1>Welcome to Dunder Mifflin Scranton</h1>
-        <p>
-          Situated in the heart of Pennsylvania's electric city, our branch of
-          the Dunder Mifflin Paper Company has been serving the Northeast with
-          the finest paper products since 1949.
+        <h1>NAGELLE DRUGMART & AGROVET</h1>
+	<p>
+          Your Trusted Health Partner. Serving Our Community as the Largest Pharmacy in Marsabit County.
         </p>
       </div>
-      <div class="c2"><img src="dms/img/dunder-mifflin.webp" /></div>
+      <div class="c2">
+	      <dotlottie-player
+  src="https://lottie.host/c857e9d1-8683-4424-a017-07be6ec4fd8a/9mVTl11JqF.lottie"
+  background="transparent"
+  speed="1"
+  loop
+  autoplay
+>
+	      </dotlottie-player>
+      </div>
     </div>
-    <div class="section column reverse">
-      <div class="c2"><img src="dms/img/finest-paper.webp" /></div>
+    <div class="section column reverse" id="ourstory">
+      <div class="c2"><img src="dms/img/staff/counter1.jpeg" /></div>
       <div class="c1">
-        <h2>Scranton's Finest Paper</h2>
+        <h2>Our Story</h2>
         <p>
-          Founded by Robert Dunder and Robert Mifflin, our company has a rich
-          heritage in the world of paper. Over the years, we've weathered
-          challenges, pranks, and some rather unique management styles.
-        </p>
+          Founded in 2004 by Yakub Omar, a former health services civil servant, Nagelle set out to deliver quality healthcare, build a modern pharmaceutical brand, create jobs, and support underprivileged communities.
+	</p>
+
+	<p>
+	Today, with a team of 30, we continue to expand our services, improve community health, and stay true to our mission of making a meaningful difference in the lives we serve.
+       </p>
       </div>
     </div>
     <div class="section column">
       <div class="c1">
-        <h2>Paper Perfection in a Digital Age</h2>
+        <h2>What We Do</h2>
         <p>
-          In a world that's increasingly digital, we stand by the power of
-          paper. Our product range includes a variety of paper types, from
-          standard office paper to specialty products for every business need.
-          Whether it's for your office, school, or home, we've got you covered.
-          Check out our product page to explore our extensive catalog.
+	Nagelle Drugmart and Agrovet provides high-quality pharmaceutical 
+	and veterinary products to promote the health of people and animals.
+	</p>
+
+	<p>
+		We offer personalized services for farmers, pet owners, and healthcare professionals, building lasting relationships as a trusted partner in health and wellness.
         </p>
       </div>
       <div class="c2"><img src="dms/img/Paper-perfection.webp" /></div>
     </div>
     <div class="section">
-      <h2 id="products">Discover Our Paper Products</h2>
+      <h2 id="products">Our Services</h2>
       <div class="column3">
         <div class="card">
           <img src="dms/img/products (1).webp" />
@@ -134,29 +152,29 @@
     <div class="section ecolumn" id="mission">
       <div class="c1">
         <h2>Our Mission</h2>
-        <p class="p2">Paper, Pranks, and People</p>
+        <p class="p2">High-quality Healthcare and Veterinary Products</p>
         <p>
-          Our mission at Dunder Mifflin Scranton goes beyond paper. We're a
-          company that values not just our products but also the people who make
-          it all possible. We believe in the power of teamwork, even if it
-          sometimes involves a few too many "that's what she said" jokes.
+          Our mission at Nagelle Drugmart and Agrovet is to provide high-quality healthcare
+	  and veterinary products that enhance the well-being of our community. We are 
+	  committed to delivering exceptional service, fostering job creation, and ensuring
+	  accessibility to health resources for all, particularly for underprivileged members
+	  of society. Through education and innovation, we strive to empower our customers
+	  with the knowledge they need for better health management.
         </p>
       </div>
-      <div class="c2"><img src="dms/img/that what she said.webp" /></div>
+      <div class="c2"><img src="dms/img/staff/counter2.jpeg" /></div>
     </div>
     <div class="section ecolumn reverse">
-      <div class="c2"><img src="dms/img/Our-Evolution.webp" /></div>
+      <div class="c2"><img src="dms/img/staff/doctor.jpeg" /></div>
       <div class="c1">
-        <h2>Our Evolution</h2>
-        <p class="p2">From the NYSE to the Sabre Era</p>
+        <h2>Our Vision</h2>
+        <p class="p2">Leading Provider of Pharmaceutical & Agrovet services in the region.</p>
         <p>
-          We've come a long way since our early days as a publicly traded
-          company on the New York Stock Exchange. The Sabre era brought its own
-          set of challenges, and we even ventured into the world of paper
-          companies, but through it all, we've remained dedicated to providing
-          quality paper and endless amusement. Under the leadership of David
-          Wallace, we've continued to grow and adapt to the ever-changing paper
-          industry.
+          Our vision is to be the leading provider of pharmaceutical and agrovet services
+	  in the region, recognized for our commitment to quality, integrity, and 
+	  community welfare. We aim to build a sustainable future by promoting health
+	  and wellness for both people and animals, while continuously expanding our reach
+	  and impact within the communities we serve.
         </p>
       </div>
     </div>
@@ -175,23 +193,22 @@
     </div>
     <div class="section ecolumn reverse" id="team">
       <div>
-        <img src="dms/img/meet the team.webp" />
+        <img src="dms/img/staff/finance1.jpeg" />
       </div>
       <div>
         <h2>Meet the Team</h2>
-        <p class="p2">The Faces of Dunder Mifflin Scranton</p>
+        <p class="p2">The Faces of Nagelle Drugmart & Agrovet</p>
         <p>
-          At the Scranton branch of Dunder Mifflin Paper Company, our team is
+          At the Nagelle Drugmart & Agrovet, our team is
           what makes the magic happen. Get to know the unique and colorful
-          individuals who keep the paper flowing, the pranks rolling, and the
-          laughter echoing through the office.
+          individuals who keep striving so we can actualize our mission and vision.
         </p>
       </div>
     </div>
     <div class="section ecolumn">
       <div class="team">
         <div class="cast">
-          <img src="dms/img/cast1/Cast_0003_Michael_Scott.webp" />
+          <img src="dms/img/staff/finance2.jpeg" />
         </div>
         <div class="cast-info">
           <h3>Michael Scott</h3>
@@ -205,7 +222,7 @@
       </div>
       <div class="team">
         <div class="cast">
-          <img src="dms/img/cast1/Cast_0007_Dwight_.webp" />
+          <img src="dms/img/staff/counter2.jpeg" />
         </div>
         <div class="cast-info">
           <h3>Dwight Schrute</h3>
@@ -219,7 +236,7 @@
       </div>
       <div class="team">
         <div class="cast">
-          <img src="dms/img/cast1/Cast_0006_JimHalpert.webp" />
+          <img src="dms/img/staff/agrovet.jpeg" />
         </div>
         <div class="cast-info">
           <h3>Jim Halpert</h3>
@@ -235,7 +252,7 @@
 
       <div class="team">
         <div class="cast">
-          <img src="dms/img/cast1/Cast_0001_Pam_Beesly-Halpert.webp" />
+          <img src="dms/img/staff/pharmaceutical.jpeg" />
         </div>
         <div class="cast-info">
           <h3>Pam Beesly</h3>
@@ -661,15 +678,16 @@
       </div>
       <div class="section ecolumn">
         <div>
-          <img class="logo2" src="dms/img/Logo.svg" />
+          <img class="logo2" src="dms/img/nagelle-logo.png" />
         </div>
         <div>
-          <h3>Limitless Paper in a Paperless World</h3>
+          <h3>WE OFFER PROFESSIONAL HEALTHCARE INTERVENTION AND AGROVET SUPPLIES.</h3>
           <p>
-            We're here to assist you with all your paper needs. Whether you have
-            questions, need to place an order, or just want to share your love
-            for "The Office," Dunder Mifflin Scranton is just a message or phone
-            call away.
+            Nagelle Drugmart and Agrovet provides high-quality pharmaceutical and veterinary products
+	    to promote the health of people and animals.
+
+	    We offer personalized services for farmers, pet owners, and healthcare
+	    professionals, building lasting relationships as a trusted partner in health and wellness..
           </p>
         </div>
       </div>
@@ -678,10 +696,11 @@
           <h3>Get in Touch</h3>
           <p>
             <br />
-            <b>Address:</b> 123 Paper Street Scranton, PA 18505 <br /><br />
-            <b>Phone:</b> (555) 123-4567 <br /><br />
-            <b>Email:</b> info@dundermifflin.com <br /><br />
-            <b>Business Hours:</b> Mon - Fri | 9:00 AM - 5:00 PM
+            <b>Address:</b> Moyale, Biashara Street <br /><br />
+            <b>Phone:</b> +(2547) 59 444 066 <br /><br />
+            <b>Email:</b> info@nagelle.com <br /><br />
+            <b>Business Hours:</b> Mon - Sun | 6:00 AM - 8:00 PM
+	 
           </p>
           <div class="social-icons">
             <img src="dms/img/footer (1).png" />
@@ -692,17 +711,16 @@
           </div>
         </div>
         <div>
-          <img src="dms/img/dunder mifflin painting.webp" />
+          <img src="dms/img/staff/counter2.jpeg" />
         </div>
       </div>
       <div class="section end">
         <p class="p3">
-          Dunder Mifflin Scranton is a proud member of the Dunder Mifflin Paper
-          Company, Inc. family. <br />
-          © 2023 Dunder Mifflin Scranton. All rights reserved.
+          Nagelle Drugmart & Agrovet <br />
+          © 2025 Nagelle Drugmart & Agrovet. All rights reserved.
         </p>
 
-        <p class="p3">Made for Fun by <a href="../">Sajid</a></p>
+        <p class="p3">Designed by <a href="../">Chief</a></p>
       </div>
     </footer>
     <script src="script.js"></script>
