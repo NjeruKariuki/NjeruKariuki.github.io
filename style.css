@@ -181,16 +181,94 @@
   .f1 {
     flex: 1;
   }
-  .column3 {
+
+.column3 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 2rem;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 8;
+    box-shadow: var(--shadow);
+    gap: .5rem;
+}
+
+.card-column3 { 
+  flex: 1;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-column3 h3 {
+  padding: 20px 20px 0px 20px;
+}
+
+.card-column3 p {
+  padding: 0px 20px 20px 20px;
+}
+
+.card-column3 img {
+  width: 100%;
+}
+
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.card h3, .card p {
+  margin: 4px 0px;
+}
+
+.card:hover {
+    scale: 1.005;
+}
+
+.column3 > div {
+  min-width: 300px;
+  flex: 1;
+}
+
+@media(max-width: 900px) {
+  .wrapper {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 20px;
-    flex-wrap: wrap;
+}
+}
+
+.cast img {
+  object-fit: contain;
+   max-height: 250px;
+   max-width: 250px;
+}
+
+@media(max-width: 600px) {
+  .cast img {
+    object-fit: contain;
+    max-height: 120px;
+    max-width: 250px;
   }
-  .column3 > div {
-    min-width: 300px;
-    flex: 1;
-  }
+}
+
   .c1 {
     flex: 1;
   }
@@ -207,11 +285,12 @@
     border-radius: 10px;
     overflow: hidden;
   }
+
   .card p {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 20px 0px 20px;
   }
   .card h3 {
-    padding: 20px 20px 0px 20px;
+    padding: 0px 20px 0px 20px;
   }
 
   img {
@@ -313,15 +392,23 @@
     width: 300px;
   }
 
-  .social-icons img {
-    width: 20px;
-  }
-  .social-icons {
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    padding: 20px 0px;
-  }
+.social-icons img {
+  width: 20px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for scale and color */
+}
+
+.social-icons img:hover {
+  transform: scale(1.5); /* Scale up by 0.5x on hover */s
+  color: var(--colorlinks);
+}
+
+.social-icons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 20px 0px;
+}
+
 
   .end {
     text-align: center;
