@@ -47,3 +47,20 @@ topBtn.addEventListener("click", toTop);
 function toTop() {
   window.scrollTo(0, 0);
 }
+
+ const designerElement = document.querySelector('.designer');
+
+  // Change content on mouseover
+  designerElement.addEventListener('mouseover', () => {
+    designerElement.textContent = 'Coder';
+  });
+
+  // Revert content on mouseout
+  designerElement.addEventListener('mouseout', () => {
+    designerElement.textContent = 'Mumina';
+  });
+
+
+ function toggleCard(card) {
+    card.classList.toggle("active");
+  }

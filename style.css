@@ -39,6 +39,7 @@
   }
   .p3 {
     font: var(--p3);
+
   }
   p {
     font: var(--p);
@@ -156,6 +157,14 @@
     .cast-info .p3 {
       display: none;
     }
+
+    .team .desc {
+      display: block;
+    }
+
+        .team.active .desc {
+    display: block; /* Shown when .team has .active */
+  }
   }
 
   /* Hero */
@@ -321,6 +330,11 @@
     box-shadow: var(--shadow);
     border-radius: 10px;
     overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+    .team:hover {
+    transform: scale(1.02);
   }
   .team p {
     margin: 8px 0px;
@@ -337,6 +351,15 @@
     padding: 20px;
     flex: 1;
   }
+
+  .team .desc {
+    display: none; /* Initially hidden */
+    transition: max-height 0.3s ease, visibility 0.3s ease;
+    padding: 20px;
+  }
+
+
+
   @media (max-width: 500px) {
     .cast-info h3 {
       font: var(--p);
@@ -392,6 +415,12 @@
     width: 300px;
   }
 
+@media (max-width: 768px){
+  .logo2 {
+    width: 100%;
+  }
+}
+
 .social-icons img {
   width: 20px;
   transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for scale and color */
@@ -434,3 +463,7 @@
   .to-top svg {
     fill: var(--coloraccent);
   }
+
+.designer {
+
+}
